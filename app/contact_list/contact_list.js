@@ -25,6 +25,12 @@ angular.module('contactList', ['ngRoute'])
   $scope.isDataReady = false;
 
   /**
+   * Contacts search string
+   * @type {string}
+   */
+  $scope.searchString = '';
+
+  /**
    * Set the contacts data.
    */
   this.setContactList = function() {
@@ -40,9 +46,21 @@ angular.module('contactList', ['ngRoute'])
         });
   };
 
-  //this.setContactList();
-}])
-
-.directive('contactItem', [function(){
-
+  this.setContactList();
 }]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

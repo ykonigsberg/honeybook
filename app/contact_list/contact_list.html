@@ -1,2 +1,10 @@
-<p>This is the partial for view 1.</p>
-{{contacts}}
+<div class="contact-list-search-wrapper">
+    search bar here:
+    <input type="text" ng-model="searchString">
+</div>
+<div class="contact-list-wrapper">
+    <div ng-class="contact-item-wrapper"
+         ng-repeat="item in contacts">
+        <contact-item contact-data="item"></contact-item>
+    </div>
+</div>
