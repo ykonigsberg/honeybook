@@ -4,19 +4,44 @@
   padding: 16px;
   position: relative;
   border: 2px solid #C6BFBA;
-  display: inline-block;
-  margin: 40px; }
+  margin: 40px;
+  color: #A4A4A4; }
   .contact-item-wrapper .contact-item-image {
-    height: 186px;
+    height: 210px;
     background-size: cover; }
   .contact-item-wrapper .contact-item-logo {
     border-radius: 50%;
     position: absolute;
-    top: 164px;
+    top: 188px;
     left: 20px;
     width: 70px;
     height: 70px; }
   .contact-item-wrapper .contact-item-name {
-    margin-top: 56px; }
+    color: #6D6D6D;
+    font-size: 20px;
+    margin-top: 36px; }
+  .contact-item-wrapper .contact-item-job-title {
+    font-size: 18px; }
+  .contact-item-wrapper .contact-item-company {
+    font-size: 14px; }
+  .contact-item-wrapper .contact-item-phone-number {
+    display: none;
+    font-size: 14px;
+    margin-top: 20px; }
+  .contact-item-wrapper .contact-item-email {
+    display: none;
+    font-size: 14px; }
+  .contact-item-wrapper:hover {
+    border: 4px solid #A4A4A4;
+    padding: 12px; }
+    .contact-item-wrapper:hover .contact-item-image {
+      height: 134px; }
+    .contact-item-wrapper:hover .contact-item-logo {
+      top: 108px;
+      left: 16px; }
+    .contact-item-wrapper:hover .contact-item-email {
+      display: block; }
+    .contact-item-wrapper:hover .contact-item-phone-number {
+      display: block; }
 
 /*# sourceMappingURL=contact_item.css.map */
