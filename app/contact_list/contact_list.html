@@ -1,10 +1,12 @@
 <div class="contact-list-search-wrapper">
     search bar here:
     <input type="text" ng-model="searchString">
+    <h1>{{searchString}} </h1>
+
 </div>
 <div class="contact-list-wrapper">
     <div ng-class="contact-item-wrapper"
-         ng-repeat="item in contacts">
+         ng-repeat="item in contacts | filter: {name: searchString}">
         <contact-item contact-data="item"></contact-item>
     </div>
 </div>

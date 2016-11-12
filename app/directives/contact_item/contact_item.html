@@ -1,5 +1,37 @@
 <div class="contact-item-wrapper">
-    <div class="contact-item-image"></div>
-    <div>{{contactData}}</div>
-    <img ng-src="{{contactData.profile_image}}"/>
+    <div class="contact-item-image"
+         ng-style="{'background-image':'url({{contactData.profile_image}})'}">
+    </div>
+    <img class="contact-item-logo" ng-src="{{contactData.icon}}"/>
+    <div>
+        <div class="contact-item-name">{{contactData.name}}</div>
+        <div>
+            <span class="contact-data-job">{{contactData.job}}</span> |
+            <span class="contact-data-company">{{contactData.company_name}}</span>
+        </div>
+
+    </div>
 </div>
+
+
+<!--company_name-->
+<!--:-->
+<!--"Clear Shoot Photography"-->
+<!--email-->
+<!--:-->
+<!--"photo@email.com"-->
+<!--icon-->
+<!--:-->
+<!--"https://s3.amazonaws.com/honeybook_cdn/assets_users_production/companies/532b267c46ecaccbf1000144/icons/2014-10-02-18-59-41-959.png"-->
+<!--job-->
+<!--:-->
+<!--"Photographer & Videographer"-->
+<!--name-->
+<!--:-->
+<!--"Luke Peterson"-->
+<!--phone-->
+<!--:-->
+<!--"123.456.7890"-->
+<!--profile_image-->
+<!--:-->
+<!--"https:-->

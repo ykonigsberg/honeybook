@@ -1,6 +1,46 @@
-.contact-item-wrapper {
-    height: 400px;
-    width: 300px;
-    background-color: pink;
+$border-color: #C6BFBA;
 
+.contact-item-wrapper {
+    height: 300px;
+    width: 240px;
+    padding: 16px;
+    position: relative;
+    border: 2px solid $border-color;
+
+
+    display: inline-block;
+    margin: 40px;
+
+    .contact-item-image {
+        height: 186px;
+        background-size: cover;
+    }
+
+    .contact-item-logo {
+        border-radius: 50%;
+        position: absolute;
+        top: 164px;
+        left: 20px;
+        width: 70px;
+        height: 70px;
+
+    }
+
+    .contact-item-name {
+        margin-top: 56px;
+    }
+
+
+    .contact-item-job-title {
+
+    }
+
+
+    .contact-item-email {
+
+    }
+
+    .contact-item-address {
+
+    }
 }

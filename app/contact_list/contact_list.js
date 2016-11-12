@@ -48,19 +48,3 @@ angular.module('contactList', ['ngRoute'])
 
   this.setContactList();
 }]);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

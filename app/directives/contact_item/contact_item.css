@@ -1,6 +1,22 @@
 .contact-item-wrapper {
-  height: 400px;
-  width: 300px;
-  background-color: pink; }
+  height: 300px;
+  width: 240px;
+  padding: 16px;
+  position: relative;
+  border: 2px solid #C6BFBA;
+  display: inline-block;
+  margin: 40px; }
+  .contact-item-wrapper .contact-item-image {
+    height: 186px;
+    background-size: cover; }
+  .contact-item-wrapper .contact-item-logo {
+    border-radius: 50%;
+    position: absolute;
+    top: 164px;
+    left: 20px;
+    width: 70px;
+    height: 70px; }
+  .contact-item-wrapper .contact-item-name {
+    margin-top: 56px; }
 
 /*# sourceMappingURL=contact_item.css.map */
