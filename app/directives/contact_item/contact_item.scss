@@ -10,13 +10,17 @@ $contact-item-info-text-size: 14px;
   padding: 16px;
   position: relative;
   border: 2px solid $contact-item-border-color;
-  // remove
-  margin: 40px;
+  background-color: white;
+  margin-top: 12px;
   color: $contact-item-info-color;
+  overflow: hidden;
 
   .contact-item-image {
     height: 210px;
     background-size: cover;
+    -webkit-transition: height 0.5s linear;
+    transition: height 0.5s linear;
+
   }
 
   .contact-item-logo {
@@ -26,15 +30,17 @@ $contact-item-info-text-size: 14px;
     left: 20px;
     width: 70px;
     height: 70px;
+    -webkit-transition: top 0.5s linear;
+    transition: top 0.5s linear;
   }
 
   .contact-item-name {
     color: $contact-item-name-color;
     font-size: 20px;
-    margin-top: 36px;
+    margin-top: 34px;
   }
-  .contact-item-job-title {
-    font-size: $contact-item-name-text-size;
+  .contact-item-job {
+    font-size: $contact-item-info-text-size;
   }
 
   .contact-item-company {
@@ -44,6 +50,7 @@ $contact-item-info-text-size: 14px;
     display: none;
     font-size: $contact-item-info-text-size;
     margin-top: 20px;
+
   }
   .contact-item-email {
     display: none;
@@ -61,6 +68,10 @@ $contact-item-info-text-size: 14px;
     .contact-item-logo {
       top: 108px;
       left: 16px;
+    }
+
+    .contact-item-name {
+      margin-top: 50px;
     }
     .contact-item-email {
       display: block;

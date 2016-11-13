@@ -1,3 +1,38 @@
+.contact-list-search-bar-wrapper {
+  border: 2px solid grey;
+  height: 124px;
+  padding-left: 140px;
+  padding-right: 140px; }
+  .contact-list-search-bar-wrapper .contact-list-search-box-container {
+    width: 300px; }
+  .contact-list-search-bar-wrapper input[type="text"] {
+    height: 20px;
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 52px;
+    width: 300px;
+    background-size: 32px 32px;
+    background-image: url("../images/search_icon.png");
+    background-repeat: no-repeat;
+    background-position: right; }
+  .contact-list-search-bar-wrapper .contact-list-search-bar-title {
+    float: left;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 40px;
+    height: 124px;
+    line-height: 124px; }
 
+.contact-list-content-container {
+  background-color: #F0EFF0;
+  padding-top: 120px; }
+
+.contact-list-wrapper {
+  margin: 0 auto;
+  max-width: 1120px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; }
 
 /*# sourceMappingURL=contact_list.css.map */
