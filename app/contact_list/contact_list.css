@@ -2,31 +2,47 @@
   border: 2px solid grey;
   height: 124px;
   padding-left: 140px;
-  padding-right: 140px; }
+  padding-right: 140px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  overflow: hidden; }
+  @media screen and (max-width: 1024px) {
+    .contact-list-search-bar-wrapper {
+      padding-left: 40px;
+      padding-right: 40px;
+      justify-content: center; } }
   .contact-list-search-bar-wrapper .contact-list-search-box-container {
-    width: 300px; }
+    width: 240px; }
+    @media screen and (max-width: 1024px) {
+      .contact-list-search-bar-wrapper .contact-list-search-box-container {
+        padding-left: 40px;
+        padding-right: 40px; } }
   .contact-list-search-bar-wrapper input[type="text"] {
     height: 20px;
     font-size: 20px;
     padding: 10px;
     position: absolute;
     top: 52px;
-    width: 300px;
+    width: 240px;
     background-size: 32px 32px;
     background-image: url("../images/search_icon.png");
     background-repeat: no-repeat;
     background-position: right; }
   .contact-list-search-bar-wrapper .contact-list-search-bar-title {
-    float: left;
-    display: inline-block;
-    box-sizing: border-box;
     font-size: 40px;
     height: 124px;
-    line-height: 124px; }
+    line-height: 124px;
+    width: 210px; }
 
 .contact-list-content-container {
   background-color: #F0EFF0;
-  padding-top: 120px; }
+  padding-top: 120px;
+  padding-bottom: 120px; }
+  @media screen and (max-width: 1024px) {
+    .contact-list-content-container {
+      padding-top: 30px;
+      padding-bottom: 30px; } }
 
 .contact-list-wrapper {
   margin: 0 auto;
@@ -34,5 +50,24 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around; }
+
+.loader-container {
+  height: 600px; }
+
+.loader {
+  border: 16px solid #f3f3f3;
+  /* Light grey */
+  border-top: 16px solid #3498db;
+  /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 
 /*# sourceMappingURL=contact_list.css.map */
