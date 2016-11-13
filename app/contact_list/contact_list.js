@@ -29,5 +29,5 @@ angular.module('contactList', ['ngRoute'])
           console.log("finished");
         });
   };
-  //this.loadContactList();
+  this.loadContactList();
 }]);
