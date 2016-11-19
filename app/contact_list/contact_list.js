@@ -4,7 +4,7 @@ angular.module('contactList', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/', {
-    templateUrl: 'contact_list/contact_list.html',
+    templateUrl: 'Ubimo/Ubimo.html',
     controller: 'ContactListCtrl'
   });
 }])

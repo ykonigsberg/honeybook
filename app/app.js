@@ -7,5 +7,5 @@ angular.module('myApp', [
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
-  $routeProvider.otherwise({redirectTo: '/contact_list'});
+  $routeProvider.otherwise({redirectTo: '/Ubimo'});
 }]);
